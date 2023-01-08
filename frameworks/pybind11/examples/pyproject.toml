@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools", "wheel", "cmake>=3.1.0", "pybind11"]
+
+[tool.black]
+line_length = 80
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  | pybind11
+)/
+'''
